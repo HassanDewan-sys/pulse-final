@@ -1,0 +1,130 @@
+import Image from "next/image";
+import React from "react";
+
+const SeoProcess = () => {
+  return (
+    <main
+    style={{
+      backgroundImage:"url('/images/seo_page_images/seo-banner01.jpg')",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition:"center",
+      backgroundAttachment: "fixed",
+    }}
+     >
+      <div className="ct-container py-[0px] md:py-[0px] lg:py-[100px]">
+        <div id="center" className="heading-wrapper seo-pulse">
+          <h3>The Pulse SEO Process</h3>
+          <p>How we turn search visibility into revenue.</p>
+        </div>
+        <div className="mt-5 flex flex-wrap items-center justify-between gap-3 px-4 md:mt-10 md:justify-center md:gap-4 md:px-0">
+          {/* First row */}
+          <div className="flex w-full flex-wrap justify-center gap-6 md:gap-6">
+            {/* card one  */}
+            <div className="border-1 cursor-default duration-400  flex min-h-[50px] w-full flex-col justify-center items-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[200px] md:w-[23%] md:p-4">
+              <div className="w-full justify-center flex h-60px]">
+              <Image
+                src={"/images/seo_page_images/search.png"}
+                height={10}
+                width={60}
+                alt="seo-audit"
+                className="invert -ml-[4px]"
+                loading="eager"
+              ></Image>
+              </div>
+              <h2 className="text-xl text-center font-semibold">
+                Free SEO Audit 
+              </h2>
+              <p className='text-[#ffffffc9] font-normal text-center mt-[-5px]'>Clear insights. No obligation.</p>
+            </div>
+
+            {/* card two  */}
+            <div className="border-1 cursor-default duration-400 items-center flex min-h-[50px] w-full flex-col justify-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[200px] md:w-[23%] md:p-4">
+              <div className="w-full justify-center flex h-60px]">
+              <Image
+                src={"/images/seo_page_images/partnerships.png"}
+                height={10}
+                width={60}
+                alt="strategy-development"
+                className="invert"
+                loading="eager"
+              ></Image>
+              </div>
+              <h2 className="text-xl text-center font-semibold">
+                Custom Strategy
+              </h2>
+              <p className='text-[#ffffffc9] font-normal text-center mt-[-5px]'>Built around your goals and market.</p>
+            </div>
+
+            {/* card three  */}
+            <div className="border-1 cursor-default duration-400 flex items-center min-h-[50px] w-full flex-col justify-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[200px] md:w-[23%] md:p-4">
+              <div className="w-full justify-center flex h-60px]">
+              <Image
+                src={"/images/seo_page_images/support.png"}
+                height={10}
+                width={60}
+                alt="optimization"
+                className="invert"
+                loading="eager"
+              ></Image>
+              </div>
+              <h2 className="text-xl text-center font-semibold">
+                On-Page & Technical SEO
+              </h2>
+              <p className='text-[#ffffffc9] font-normal text-center mt-[-5px]'>Fix foundations. Improve performance.</p>
+            </div>
+          </div>
+
+          {/* Space between rows */}
+          {/* <div className='h-8'></div> */}
+
+          {/* Second row */}
+          <div className="mt-3 flex w-full flex-wrap justify-between gap-6 md:mt-5 md:justify-center md:gap-6">
+            {/* card four */}
+            <div className="border-1 cursor-default duration-400 flex items-center min-h-[50px] w-full flex-col justify-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[200px] md:w-[23%] md:p-4">
+              <div className="w-full justify-center flex h-60px]">
+              <Image
+                src={"/images/seo_page_images/content-creation.png"}
+                height={10}
+                width={60}
+                alt="link building"
+                className="invert"
+                loading="eager"
+              ></Image>
+              </div>
+              <h2 className="text-xl text-center font-semibold">
+                Content & Authority
+              </h2>
+              <p className='text-[#ffffffc9] font-normal text-center mt-[-5px]'>Create relevance. Build trust.</p>
+            </div>
+
+            {/* card five */}
+            <div className="border-1 cursor-default duration-400 items-center flex min-h-[50px] w-full flex-col justify-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[200px] md:w-[23%] md:p-4">
+              <div className="w-full justify-center flex h-60px]">
+              <Image
+                src={"/images/seo_page_images/tracking.png"}
+                height={10}
+                width={60}
+                alt="performance tracking"
+                className="invert -ml-[10px]"
+                loading="eager"
+              ></Image>
+              </div>
+              <h2 className="text-xl text-center font-semibold">
+                Track & Improve
+              </h2>
+              <p className='text-[#ffffffc9] font-normal text-center mt-[-12px]'>Measure results. Optimize continuously.</p>
+            </div>
+          </div>
+          {/* <img
+            src="/images/seo_page_images/seo-process.gif"
+            alt="seo process"
+            className="w-full md:w-[60%] lg:w-[65%] xl:w-[65%]"
+          /> */}
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default SeoProcess;
