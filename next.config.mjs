@@ -1,15 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-      remotePatterns:[
-        {
-          hostname:"res.cloudinary.com",
-          protocol:'https'
-        }
-      ] 
-  },
   reactStrictMode: true,
   trailingSlash: true,
+
+  compress: true,        // ✅ Gzip/Brotli
+  swcMinify: true,       // ✅ JS minification
+
+  images: {
+    formats: ["image/avif", "image/webp"], // ✅ Better image formats
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
