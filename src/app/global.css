@@ -4889,6 +4889,10 @@ div#service-section .service-boxes-wrapper .service-box h5 {
     font-size: 14px !important;
   }
 
+  #about-content .flex.flex-col * {
+    justify-content: center;
+}
+
 }
 
 
