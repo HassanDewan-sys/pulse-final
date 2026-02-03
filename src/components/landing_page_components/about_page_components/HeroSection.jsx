@@ -136,8 +136,9 @@ const HeroSection = () => {
 
         <Navbar />
         <div className="relative flex w-full flex-col items-center justify-center">
-          <div className="z-10 flex flex-col ct-container" id="innerpages-banner">
-            <div className="mb-5 flex">
+          <div className="z-10 flex flex-col ct-container ab-banner-ct" id="innerpages-banner">
+            <div className="ab-banner-content">
+              <div className="mb-5 flex">
               <Link
                 href={
                   "https://www.bbb.org/ca/bc/vancouver/profile/digital-marketing/pulse-marketing-inc-0037-2428735/#sealclick"
@@ -227,6 +228,19 @@ const HeroSection = () => {
                 </button>
                 {/* <PrimaryBtn text={"Book now"} /> */}
               </Link>
+            </div>
+            </div>
+            <div className="ab-banner-calender">
+              <iframe
+                src="https://calendly.com/ianpslater/powermeeting?month=2025-12&embed_domain=yourdomain.com&embed_type=Inline"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Calendly Scheduling Page"
+                loading="eager" // Forces the browser to load it immediately [4]
+                style={{ minWidth: "320px", height: "500px" }}
+              >
+              </iframe>
             </div>
           </div>
         </div>
